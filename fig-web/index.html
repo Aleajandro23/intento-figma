@@ -5,193 +5,511 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turilo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-
-        <div class="menu container">
-
-            <a href="a" class="logo">Logo</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="/images/menu-btn.png" alt="menu-icon">
-            </label>
-
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <!-- navbar -->
+        <div class="top-nav container">
+            <div class="nav-left">
+                <a href="#" class="logo">TuriLoj</a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Busca cualquier cosa aquí...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <i class="fa-solid fa-globe"></i>
+                    Idioma Español
+                </div>
+                <div class="region-selector">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Loja, Ecuador
+                </div>
+            </div>
         </div>
+
+        <!-- Filters Navigation -->
+        <div class="filters-nav container">
+            <nav class="categories">
+                <a href="#" class="filter-item">Montaña <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Gastronomía <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Actividades <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Histórico <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Cultura <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Romántico <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+                <a href="#" class="filter-item">Naturaleza <img src="/images/arrow-down.svg" alt="Flecha hacia abajo" width="12" height="12"></a>
+            </nav>
+            
+            <div class="user-actions">
+                <button class="like-btn" aria-label="Like">
+                    <img src="/images/corazon.svg" alt="Corazón" width="40" height="40">
+                </button>
+                <button class="user-btn" aria-label="User Profile">
+                    <img src="/images/profile.svg" alt="Perfil de Usuario" width="40" height="40">
+                </button>
+            </div>
+            
+        </div>
+
+        <!-- Hero Section -->
         <div class="header-content container">
             <div class="content">
-                <h1> lorem imput isru</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur
-                </p>
-                <a href="#" class="btn-1">Mas Informacion</a>
-                <a href="#" class="btn-1">Mas Informacion</a>
+                <span class="tag1">✈️ Explora lo maravilloso que es Loja!</span>
+                <h1>Disfruta y <span class="text-blue">descubre nuevos</span> lugares en Loja 🌿</h1>
+                <p>ViveLoja! te mantiene siempre actualizado sobre los nuevos lugares turísticos en Loja, siguiendo las recomendaciones de influencers en redes sociales ✨✨</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-1">Empieza ahora →</a>
+                    <a href="#" class="btn-2">▶ Ver Demo</a>
+                </div>
             </div>
-            <img src="images/me turis.png" alt="yo turismo">
+            <img class="tilin" src="images/me turis.png" alt="Turismo en Loja">
         </div>
-
-
     </header>
 
-    <main class="services container">
-        <div class="service">
-            <img src="images/icon1.svg" alt="">
-            <h3>Servicio 1</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius saepe tempore, 
-                at architecto obcaecati voluptate voluptatum hic fuga autem. 
-            </p>
+    <!-- sponsors aqui  -->
+<section class="sponsors container">
+    <div class="sponsors-grid">
+        <div class="sponsor-item">
+            <img src="images/cooperativa-loja.png" alt="Cooperativa de Transportes Loja">
         </div>
-
-        <div class="service">
-            <img src="images/icon2.svg" alt="">
-            <h3>Servicio 2</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius saepe tempore, 
-                at architecto obcaecati voluptate voluptatum hic fuga autem. 
-            </p>
+        <div class="sponsor-item">
+            <img src="images/jetstar.png" alt="Jetstar">
         </div>
-
-        <div class="service">
-            <img src="images/icon3.svg" alt="">
-            <h3>Servicio 3</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius saepe tempore, 
-                at architecto obcaecati voluptate voluptatum hic fuga autem. 
-            </p>
+        <div class="sponsor-item">
+            <img src="images/clip2.png" alt="El Clipo">
         </div>
-
-        <div class="service">
-            <img src="images/icon4.svg" alt="">
-            <h3>Servicio 4</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius saepe tempore, 
-                at architecto obcaecati voluptate voluptatum hic fuga autem. 
-            </p>
+        <div class="sponsor-item">
+            <img src="images/mercedes.png" alt="Mercedes-Benz">
         </div>
-    </main>
+        <div class="sponsor-item">
+            <img src="images/alitalia.png" alt="Alitalia">
+        </div>
+    </div>
+</section>
 
-    <section class="portafolios container">
-        <h2>Portafolio</h2>
-
-        <div class="portafolio">
-
-            <img src="images/img1.png" alt="">
-            <div class="portafolio-1">
-                <h3>Portafolio 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                    recusandae eaque aperiam architecto nam sequi odit 
-                    saepe exercitationem quae. Hic, recusandae ratione.
-                </p>
-                <a href="#" class="btn-2">Informacion</a>
+<!-- Seccion de lugares Favoritos -->
+<section class="favorites container">
+    <div class="section-header">
+        <span class="section-tag">LUGARES FAVORITOS</span>
+        <div class="section-title">
+            <h2>✈️ Descubre tu Destino Favorito</h2>
+            <a href="#" class="see-all">Ver todos</a>
+        </div>
+    </div>
+    
+    <div class="places-grid">
+        <div class="place-card">
+            <img src="images/catedral.png" alt="Catedral Católica">
+            <div class="place-info">
+                <h3>Catedral Católica de Loja - Parroquia El Sagrario</h3>
             </div>
-
         </div>
-
-        <div class="portafolio">
-
-            <div class="portafolio-2">
-
-                <h3>Portafolio 2</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                    recusandae eaque aperiam architecto nam sequi odit 
-                    saepe exercitationem quae. Hic, recusandae ratione.
-                </p>
-                <a href="#" class="btn-2">Informacion</a>
+        
+        <div class="place-card">
+            <img src="images/puerta.png" alt="Puerta de la Ciudad">
+            <div class="place-info">
+                <h3>Puerta de la Ciudad</h3>
             </div>
-
-            <img src="images/img2.png" alt="">
         </div>
-
-        <div class="portafolio">
-
-            <img src="images/img3.png" alt="">
-            <div class="portafolio-3">
-                <h3>Portafolio 3</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                    recusandae eaque aperiam architecto nam sequi odit 
-                    saepe exercitationem quae. Hic, recusandae ratione.
-                </p>
-                <a href="#" class="btn-2">Informacion</a>
+        
+        <div class="place-card">
+            <img src="images/lourdes.png" alt="Calle Lourdes">
+            <div class="place-info">
+                <h3>Calle Lourdes</h3>
             </div>
-
         </div>
-
-        <div class="portafolio">
-
-            <div class="portafolio-4">
-
-                <h3>Portafolio 4</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                    recusandae eaque aperiam architecto nam sequi odit 
-                    saepe exercitationem quae. Hic, recusandae ratione.
-                </p>
-                <a href="#" class="btn-2">Informacion</a>
+        
+        <div class="place-card">
+            <img src="images/jipiro.png" alt="Parque Jipiro">
+            <div class="place-info">
+                <h3>Parque Jipiro</h3>
             </div>
-
-            <img src="images/img4.png" alt="">
         </div>
+    </div>
+</section>
 
-    </section>
-
-    <footer>
-
-        <div class="container">
-
-            <div class="info">
-
-                <div class="info-content">
-
-                    <div class="info-price">
-                        <h2>Costo</h2>
-                        <p class="price">$45</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                            recusandae eaque aperiam architecto nam sequi odit 
-                        </p>
+<!-- Reservacion -->
+<section class="container section-spacing">
+    <div class="reservation-container">
+        <div class="reservation-content">
+            <span class="tag-blue">RESERVAR LUGAR!</span>
+            
+            <h2 class="title-large">¿No quieres hacer<br>fila? ¡Solo reserva! 👍🏼</h2>
+            
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-icon search-icon">🔎</div>
+                    <div class="step-text">
+                        <h3>Encuentra el lugar que deseas</h3>
+                        <p>Descubre el próximo destino que visitarás con ViveLoja!</p>
                     </div>
-
-                    <div class="info-txt">
-                        <h2>Pricing List</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Dolore quaerat debitis, ea ad ratione vitae illum pariatur
-                            recusandae eaque aperiam architecto nam sequi odit 
-                        </p>
-                        <a href="#" class="btn-1">Informacion</a>
-                    </div>
-
                 </div>
-                <br>
-                <div class="enlaces">
-                    <h3>Logo</h3>
-                    <div class="enlace">
-                        <li><a href="#">lorem</a></li>
-                        <li><a href="#">ipsum</a></li>
-                        <li><a href="#">dolor</a></li>
-                        <li><a href="#">sit</a></li>
+
+                <div class="step-item">
+                    <div class="step-icon edit-icon">✏️</div>
+                    <div class="step-text">
+                        <h3>Ingresa tus datos y confirma el pago</h3>
+                        <p>Escribe y completa tus datos para el proceso de reserva</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-icon enjoy-icon">😍</div>
+                    <div class="step-text">
+                        <h3>¡Solo entra y disfruta!</h3>
+                        <p>Puedes entrar directamente y disfrutar de tus vacaciones sin inconvenientes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo-text">
+                <h3>¡O mejor aún, hazlo <span class="text-green">gratis</span> y encuentra grupos gratuitos que te están esperando! 🎉</h3>
+            </div>
+        </div>
+
+        <div class="reservation-card">
+            <img src="/images/imagenturismoloja.png" alt="Turismo en Loja" class="card-image">
+            <div class="card-content">
+                <h3>Vacaciones en Loja 🚗</h3>
+                <div class="card-info">
+                    <span>14-29 Junio | </span>
+                    <span>by ViveLoja!</span>
+                </div>
+                <div class="card-icons">
+                    <span>🌿</span>
+                    <span>🏰</span>
+                    <span>✈️</span>
+                </div>
+                <div class="card-status">
+                    <div class="status-left">
+                        <span>👥 12 personas viajando juntas</span>
+                    </div>
+                    <div class="status-right">
+                        <div class="card-progress">
+                            <div class="progress-text">
+                                <span>Encurso</span>
+                                <span>ExploraLoja</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%"></div>
+                            </div>
+                            <span>40% completed</span>
+                        </div>
+                        <button class="like-button">❤️</button>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- EXPLORA LUGARES -->
+<section class="container section-spacing">
+    <div class="explore-section">
+        <!-- Header -->
+        <div class="explore-header text-center">
+            <span class="tag-purple">EXPLORA LUGARES!</span>
+            <h2 class="title-large">🗺️ Busca lugares turísticos cerca de ti</h2>
+            <p class="subtitle">
+                Esta función te permite buscar lugares turísticos o sitios que están de moda en tu área, para que siempre estés al día y no te quedes desactualizado 👍
+            </p>
+        </div>
+
+        <!-- PARA EL MAPA -->
+        <div class="map-container">
+            <iframe id="map-canvas" class="map_part" width="600" height="450" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=ECUADOR, LOJA&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered
+                by <a href="https://embedgooglemaps.com">embed google maps</a> and <a href="https://beviljaralla.se/">sms lån som
+                    beviljar alla</a>
+            </iframe>
+        </div>
+
+        <!-- pOPULAR CERCA DE TI-->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Popular cerca de ti</h3>
+                <p>Lugares turísticos populares y bien conocidos por todos cerca de ti.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">❤️</div>
+                <h3>Favoritos cerca de ti</h3>
+                <p>Lugares favoritos y apreciados por todas las personas en tu área</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Concurrido cerca de ti</h3>
+                <p>Los lugares más concurridos tanto por los residentes como por los turistas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section for Tourism Gallery -->
+<section class="gallery-section">
+    <div class="gallery-header">
+      <div class="logo-container">
+        <span class="conociendo">CONOCIENDO</span>
+        <img src="/imagenes/logo.svg" alt="Turilo!" class="logo">
+      </div>
+      <h1 class="gallery-title">Galería Turística & Blog de Viajes.</h1>
+      <a href="#" class="view-all">Ver todos</a>
+    </div>
+  
+    <div class="gallery-content">
+      <div class="gallery-card">
+        <img src="/images/olvidadas.png" alt="Maquinas olvidadas" class="card-image">
+        <div class="card-content">
+          <span class="date">28 SEPTIEMBRE 2024</span>
+          <h3 class="card-title">Sera este el lugar de las maquinas olvidadas 🤔😅</h3>
+          <p class="card-description">A ver... ¿conoces el lugar? ¡Si, es el trayecto a la famosa cascada Cumanda!</p>
+          <a href="#" class="read-more">Leer más...</a>
+        </div>
+      </div>
+  
+      <div class="video-container">
+        <video autoplay muted loop playsinline class="feature-video">
+          <source src="/images/cascada.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  
+    <div class="bottom-banner">
+      <h2 class="banner-title">Cómo hacer que los peces te cuenten sus secretos... o al menos te saluden 😁🐟</h2>
+      <p class="banner-description">Los peces no solo nadan..., también tienen secretos bajo el agua! Pregúntales, quizás te respondan... o al menos te saluden con una burbuja 😊🐟</p>
+      <div class="banner-tags">
+        <span class="tag">Google</span>
+        <span class="tag">Trending</span>
+        <span class="tag">Loja</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <div class="testimonials-header">
+      <div class="header-content2">
+        <span class="testimonio-text">TESTIMONIO DE</span>
+        <img src="/images/viveloja.svg" alt="ViveLoja!" class="viveloja-logo">
+      </div>
+      <div class="title-container">
+        <span class="chat-icon">💬</span>
+        <h2 class="testimonials-title">¿Qué dicen ellos sobre nosotros?</h2>
+      </div>
+      <p class="testimonials-subtitle">
+        Curioso por saber qué opinan los usuarios que han utilizado la aplicación y el sitio web de <span class="turilo">TuriLo!</span>
+        para decidir su próximo destino para visitar? ¡Échale un vistazo a continuación!
+      </p>
+    </div>
+  
+    <div class="testimonials-grid">
+      <!-- Testimonial Card 1 -->
+      <div class="testimonial-card">
+        <img src="path-to-your-image-1.jpg" alt="Lucas Galih" class="profile-image">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            <span class="turilo">TuriLo!</span> me ayudó a encontrar nuevos lugares turísticos en Loja con facilidad
+          </p>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star empty">★</span>
+          </div>
+          <h3 class="author-name">Lucas Galih</h3>
+          <p class="author-title">Docente en UTPL</p>
+        </div>
+      </div>
+  
+      <!-- Testimonial Card 2 -->
+      <div class="testimonial-card">
+        <div class="doodle">✎</div>
+        <img src="/images/yo2.png" alt="Ruben Cabrera" class="profile-image">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            <span class="turilo">TuriLo!</span> me ayudó a encontrar pareja, y resulta que mi pareja es el servicio al cliente
+          </p>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star empty">★</span>
+          </div>
+          <h3 class="author-name">Ruben Cabrera</h3>
+          <p class="author-title">Ceo de <img src="/images/viveloja.svg" alt="ViveLoja!" class="viveloja-small"></p>
+        </div>
+      </div>
+  
+      <!-- Testimonial Card 3 -->
+      <div class="testimonial-card">
+        <img src="path-to-your-image-3.jpg" alt="Petrik Carrion" class="profile-image">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            La Cascada Namanda se volvió muy visitada cuando la añadí a <span class="turilo">TuriLo!</span>
+          </p>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star empty">★</span>
+          </div>
+          <h3 class="author-name">Petrik Carrion</h3>
+          <p class="author-title">Estudiante de Turismo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="faq-section">
+    <div class="faq-header">
+      <div class="header-top">
+        <span class="preguntas-text">PREGUNTAS FRECUENTES</span>
+        <a href="#" class="ver-todos">Ver todos</a>
+      </div>
+      <div class="title-container">
+        <span class="thinking-emoji">🤔</span>
+        <h2 class="faq-title">Preguntas que se hacen con frecuencia.</h2>
+      </div>
+    </div>
+  
+    <div class="faq-list">
+      <!-- FAQ Item 1 -->
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>¿Por qué falló mi pago? 😔</h3>
+          <span class="arrow"></span>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 2 -->
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>¿Es Ruben Cabrera el CEO de Turilo!? 😎😎😎</h3>
+          <span class="arrow"></span>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 3 - Expanded -->
+      <div class="faq-item expanded">
+        <div class="faq-header">
+          <h3>¿Por qué elegir <span class="turilo">TuriLo!</span>?</h3>
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, wh</p>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 4 -->
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>Como puedo entrar a un grupo? 😅</h3>
+          <span class="arrow"></span>
+        </div>
+      </div>
+  
+      <!-- FAQ Item 5 -->
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>¿Qué lugares recomiendas para solteros? 😅😛</h3>
+          <span class="arrow"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container2">
+    <div class="left2">
+        <h2>¿Aún confundido buscando el lugar perfecto? 🤔🤔</h2>
+        <p>No te preocupes, tenemos una función de recomendaciones que te ayudará a encontrar el destino ideal respondiendo a algunas preguntas que te haremos.</p>
+        <a href="#" class="button">Comienza ahora →</a>
+    </div>
+    <div class="right2">
+        <img class="persona" src="/images/persona.png" alt="Persona buscando el lugar perfecto">
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="logo-container">
+                <img src="/images/ViveLoja.svg" alt="ViveLoja Logo" class="logo">
+                <img src="/images/yologo.svg" alt="Cara Logo" class="logo">
+            </div>
+            <p>
+                ViveLoja es un sitio web o servicio de aplicación que te ayuda a elegir o recomendar lugares conocidos como 'tesoros ocultos' para que sean más reconocidos y visitados
+                <a href="#">Lee más aquí.</a>
+            </p>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-phone"></i> 09-765-1153</li>
+                <li><i class="fa-solid fa-envelope"></i> racondoy3@utpl.edu.ec</li>
+                <li><i class="fa-solid fa-location-dot"></i> Loja, Ecuador</li>
+                <li><i class="fa-solid fa-phone"></i> +593-09-765-1153</li>
+            </ul>
+            <p>© 2023–2024, Todos los derechos reservados</p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-column">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Quiénes Somos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Empleos</a></li>
+                    <li><a href="#">Galería</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Online Chat</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Tiket</a></li>
+                    <li><a href="#">Call Center</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>FAQ</h4>
+                <ul>
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Organización</a></li>
+                    <li><a href="#">Órdenes</a></li>
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Idioma</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Política De Privacidad</a></li>
+            <li><a href="#">Mapa Del Sitio</a></li>
+            <li><a href="#">Guía De Uso</a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>
