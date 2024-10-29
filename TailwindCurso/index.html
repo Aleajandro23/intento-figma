@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container min-h-screen bg-[url('imagenes/skyback.png')] px-28 py-5
+    relative">
+        <nav class="flex items-center">
+            <img src="imagenes/TuriLo logo.svg" class="w-40 cursor-pointer" alt="">
+
+            <!-- Barra de búsqueda -->
+            <div class="relative flex items-center mx-4">
+                <input type="text" placeholder="Busca cualquier cosa aquí..."
+                    class="border rounded-full py-2 px-20 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <button
+                    class="absolute left-2 top-1/2 transform -translate-y-1/2  bg-blue-500 text-white rounded-full px-3 py-1"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5"> <a href="#" class="no-underline px-2">Home</a></li>
+                <li class="list-none inline-block px-5"> <a href="#" class="no-underline px-2">Acerca</a></li>
+                <li class="list-none inline-block px-5"> <a href="#" class="no-underline px-2">Servicio</a></li>
+                <li class="list-none inline-block px-5"> <a href="#" class="no-underline px-2">Contacto</a></li>
+            </ul>
+            <div class="flex items-center mx-4 cursor-pointer">
+                <i class="fa-solid fa-location-dot"></i>
+                Loja, Ecuador
+            </div>
+            <img src="/imagenes/corazon.svg" class="w-8 cursor-pointer" alt="favoritos">
+            <img src="/imagenes/profile.svg" class="w-8 cursor-pointer" alt="perfil">
+
+        </nav>
+        <hr class="border-t border-gray-500 my-4"> <!-- Línea horizontal -->
+        <div class="filters-nav container mx-auto mt-4"> <!-- Añadido mt-4 para margen superior -->
+            <nav class="flex justify-center space-x-4">
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Montaña
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Gastronomía
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Actividades
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Histórico
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Cultura
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Romántico
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+                <a href="#" class="filter-item flex-1 text-center flex items-center text-[#9A9EA6] hover:text-blue-500">
+                    Naturaleza
+                    <i class="fa-solid fa-sort-down ml-1"></i>
+                </a>
+            </nav>
+        </div>
+
+
+        <div class="mt-48 max-w-xl">
+
+            <h1 class="text-6xl font-bold leading-normal">
+                Disfruta y <br>
+                <span class="text-[#4475F2]">descubre nuevos</span> <br>
+                lugares en Loja ️🎋
+            </h1>
+            <p>
+                ViveLoja! te mantiene siempre actualizado sobre los nuevos lugares turísticos en Loja, siguiendo las
+                recomendaciones de influencers en redes sociales ✨✨
+            </p>
+
+
+            <div class="mt-10 ">
+                <a href="#" class="bg-blue-500 rounded-3xl py-3 px-8 
+                 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-500
+                duration-300 hover:border border border-transparent"> Empieza ahora <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                <a href="#"> <i class="fa-solid fa-circle-play text-[#4475F2]"></i> VER DEMO</a>
+            </div>
+
+            <div>
+                <img src="imagenes/me turis.png" alt="yo de fondo" class="w-full xl:w-1/2 xl:absolute
+                bottom-0 right-20">
+            </div>
+
+        </div>
+
+
+    </div>
+<!-- Sección de patrocinadores -->
+<section class="container mx-auto mt-4 px-28 py-1 relative">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="flex justify-center items-center">
+            <img src="imagenes/cooperativa-loja.png" alt="Cooperativa de Transportes Loja" class="max-w-full h-auto">
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="imagenes/jetstar.png" alt="Jetstar" class="max-w-full h-auto">
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="imagenes/clip2.png" alt="El Clipo" class="max-w-full h-auto">
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="imagenes/mercedes.png" alt="Mercedes-Benz" class="max-w-full h-auto">
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="imagenes/alitalia.png" alt="Alitalia" class="max-w-full h-auto">
+        </div>
+    </div>
+</section>
+
+<!-- Sección de lugares Favoritos -->
+<section class="relative mt-0 px-28 py-5">
+    <div class="container mx-auto">
+        <div class="mb-6">
+            <span class="text-sm font-semibold text-gray-600">LUGARES FAVORITOS</span>
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-bold">✈️ Descubre tu Destino Favorito</h2>
+                <a href="#" class="text-blue-500 hover:underline">Ver todos</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="flex flex-col items-center">
+                <img src="imagenes/catedral.png" alt="Catedral Católica" class="w-full h-auto">
+                <div class="text-center mt-2">
+                    <h3 class="text-lg font-semibold">Catedral Católica de Loja - Parroquia El Sagrario</h3>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img src="imagenes/puerta.png" alt="Puerta de la Ciudad" class="w-full h-auto">
+                <div class="text-center mt-2">
+                    <h3 class="text-lg font-semibold">Puerta de la Ciudad</h3>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img src="imagenes/lourdes.png" alt="Calle Lourdes" class="w-full h-auto">
+                <div class="text-center mt-2">
+                    <h3 class="text-lg font-semibold">Calle Lourdes</h3>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img src="imagenes/jipiro.png" alt="Parque Jipiro" class="w-full h-auto">
+                <div class="text-center mt-2">
+                    <h3 class="text-lg font-semibold">Parque Jipiro</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+
+
+
+</body>
+
+</html>
